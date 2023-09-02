@@ -45,15 +45,15 @@ int main(int ac, char *av[])
  */
 int factorize(char *buffer)
 {
-	long unsigned int number;
-	long unsigned int i;
+	long int number;
+	long int i;
 
 	number = atoi(buffer);
-	for (i = 2; i < number; i ++)
+	for (i = 1; i <= number; i ++)
 	{
 		if (number % i == 0)
 		{
-			printf("%lu=%lu*%lu\n", number, number/i, i);
+			printf("%ld=%ld*%ld\n", number, number/i, i);
 			break;
 		}
 	}
